@@ -1,0 +1,46 @@
+<!-- <h4>ngStyle</h4>
+<div [ngStyle]="{'background-color':'red'}">Testing ngStyle No 1 </div>
+<div [ngStyle]="{'background-color':getColor()}">Testing ngStyle No 2 </div>
+<div [style.backgroundColor]="getColor()">Testing ngStyle No 3 </div>
+<div [ngStyle]="getColorObj()">Testing ngStyle No 4</div>
+<div [ngStyle]="changeColor()">Testing NgStyle No 5</div> -->
+<!-- <h4>ngClass</h4>
+<div [ngClass]="{'makered':this.testObj.id<=1}">ng Class 1</div>
+<div [ngClass]="{'makered':this.testObj.id<=100, 'makegrey':this.testObj.id>=100}">ng Class 2 </div>
+<div [class.makered]="this.testObj.id>=100">ng Class 3</div> -->
+<!-- <h4>ngIf Directive</h4>
+<div *ngIf="(this.testObj.price > 500)">ngIf Directive Class 1 </div><br>   
+<div *ngIf="(this.testObj.price < 500); else else_content">ngIf Directive Class 222222 </div><br>
+<div *ngIf="(this.testObj.price >= 100); then if_content">ngIf Directive Class 3333 </div><br>
+<div *ngIf="(this.testObj.price >= 500) ; then if_content else else_content" >ngIf Directive Class 44444444</div>
+
+
+<ng-template #else_content> You can Place  your ng else Content here</ng-template>
+<ng-template #if_content>You can place your if content in this block</ng-template> -->
+<h5>ngSwitch</h5>
+<!-- selectedcountry -->
+<!-- <select [(ngModel)]="selectCountry">
+    <option value="0">---Select---</option>
+    <option value="1">India </option>
+    <option value="2">Pakistan</option>
+    <option value="3">Turkey</option>
+</select>
+<br><br>
+<div [ngSwitch]="selectCountry">
+    <div *ngSwitchCase="1">India is a our Neighbour country .</div>
+    <div *ngSwitchCase="2">Pakistan found in 1947</div>
+    <div *ngSwitchCase="3">Turkey is ma favourite country. I love Rajab Taayab Ardugan </div>
+    <div *ngSwitchDefault>Wrong Selection </div>
+</div> -->
+
+<h4>ngFor Directives </h4>
+<div *ngFor="let p of persons" class="box ">
+    id: {{p.id}} <br>
+    name: {{p.name}}
+</div><br><br>
+
+<div *ngFor="let p of persons;let i =index" class="box">
+    index: {{i}}<br>
+    id: {{p.id}}<br>
+    name: {{p.name}}
+</div>

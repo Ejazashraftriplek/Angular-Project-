@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular-App-3';
+  sizeHandler($event: any){  alert($event);}
 }

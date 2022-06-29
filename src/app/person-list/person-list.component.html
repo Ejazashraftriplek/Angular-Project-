@@ -1,0 +1,11 @@
+<p>Personal Details </p>
+<div *ngFor="let p of persons">
+    <!-- <p>
+        Id : {{p.id}} ,
+        Name : {{p.name}} ,
+        Age: {{p.age}}
+    </p> -->
+    <app-person [per]="p" (counterEvent)="personcountHanfled($event)"></app-person>
+    <p>selected so far: {{selPersons}}</p>
+
+</div>
