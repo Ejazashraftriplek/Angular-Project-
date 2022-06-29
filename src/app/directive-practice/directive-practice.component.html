@@ -10,8 +10,8 @@
 <div [class.makered]="this.testObj.id>=100">ng Class 3</div> -->
 <!-- <h4>ngIf Directive</h4>
 <div *ngIf="(this.testObj.price > 500)">ngIf Directive Class 1 </div><br>   
-<div *ngIf="(this.testObj.price < 500); else else_content">ngIf Directive Class 222222 </div><br>
-<div *ngIf="(this.testObj.price >= 100); then if_content">ngIf Directive Class 3333 </div><br>
+<div *ngIf="(this.testObj.price < 500); else else_content">ngIf Directive Class 2 </div><br>
+<div *ngIf="(this.testObj.price >= 100); then if_content">ngIf Directive Class 3 </div><br>
 <div *ngIf="(this.testObj.price >= 500) ; then if_content else else_content" >ngIf Directive Class 44444444</div>
 
 
@@ -21,13 +21,13 @@
 <!-- selectedcountry -->
 <!-- <select [(ngModel)]="selectCountry">
     <option value="0">---Select---</option>
-    <option value="1">India </option>
+    <option value="1">Iran </option>
     <option value="2">Pakistan</option>
     <option value="3">Turkey</option>
 </select>
 <br><br>
 <div [ngSwitch]="selectCountry">
-    <div *ngSwitchCase="1">India is a our Neighbour country .</div>
+    <div *ngSwitchCase="1">Iran is a our Neighbour country .</div>
     <div *ngSwitchCase="2">Pakistan found in 1947. Quaid Azam Muhammad Ali jinnah was a founder of Pakistan </div>
     <div *ngSwitchCase="3">Turkey is ma favourite country. I love Rajab Taayab Ardugan </div>
     <div *ngSwitchDefault>Wrong Selection </div>
@@ -40,7 +40,7 @@
 </div><br><br>
 
 <div *ngFor="let p of persons;let i =index" class="box">
-    index: {{i}}<br>
-    id: {{p.id}}<br>
-    name: {{p.name}}
+     My index: {{i}}<br>
+    My  id: {{p.id}}<br>
+    My  name: {{p.name}}
 </div>
